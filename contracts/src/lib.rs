@@ -23,6 +23,12 @@ impl Default for PrizeContract {
 #[near_bindgen]
 impl PrizeContract {
     // ADD CONTRACT METHODS HERE
+    #[init]
+    pub fn new (){
+        
+    }
+
+
     #[payable]
     pub fn enter_draw(&mut self){
         if near_sdk::env::attached_deposit() == self.entry_fee{
@@ -50,7 +56,7 @@ impl PrizeContract {
     }
 
     pub fn close_contract(self)->Promise{
-        Promise::new("sockdrawer.near".parse().unwrap()).transfer(env::account_balance())
+        Promise::new("sockdrawer.testnet".parse().unwrap()).transfer(env::account_balance())
     }
 
 }

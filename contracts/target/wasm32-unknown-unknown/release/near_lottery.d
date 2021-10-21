@@ -1,0 +1,1 @@
+/Users/jobymacbookpro/Documents/NearTutorials/near_lottery/contracts/target/wasm32-unknown-unknown/release/near_lottery.wasm: /Users/jobymacbookpro/Documents/NearTutorials/near_lottery/contracts/src/lib.rs
