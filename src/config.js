@@ -31,4 +31,5 @@ module.exports = function getConfig(isServer = false) {
       contractName: "near",
     };
   }
+  return config;
 }
